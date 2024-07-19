@@ -1096,10 +1096,3 @@ ggboxplot(reshape2::melt(data.frame(df_metab_feces.X.log.pareto[,c("neg-M593T177
   scale_color_manual(values=c("#00468B", "#AD002A")) +
   theme(axis.text.x = element_text(angle = -45, vjust = 0.5, hjust=0)) +
   stat_compare_means(aes(group = Disease), method = "wilcox.test", label = "p.format") 
-
-
-
-options(ggpubr.parse_aes = FALSE) #let ggpubr to handle non-standard column names
-
-
-
